@@ -28,13 +28,13 @@ We know that hard, and honest work doesn't come easily. If you feel like you are
 
 ## Getting started
 
-1. Open the assignment acceptance link your teacher shares in **Teams** or **OneNote**, and accept the assignment. That creates your private GitHub repository.
-2. Clone your repository and open the project folder in IntelliJ IDEA.
-3. When IntelliJ asks, trust/open it as a **Maven** project (it will read `pom.xml`).
-4. Use a JDK **17** (or newer) for the project SDK if prompted.
-5. Use the green play **dropdown** in the top-right toolbar to run `Main` or any of the shared test configurations (you do not need to open the test file first).
+1. Open the assignment link your teacher posts in **Teams** or **OneNote**, and accept the assignment. GitHub will create a private project just for you.
+2. On your new project page, click the green **Code** button, copy the link, and clone the project into IntelliJ (File → New → Project from Version Control, then paste the link).
+3. When IntelliJ asks if you trust the project, say yes / trust it so it can finish setting things up.
+4. If IntelliJ asks you to pick a Java version (JDK), choose **17** or newer.
+5. Use the green play **dropdown** near the top-right of IntelliJ to run the program (`Main`) or the tests. You can stay in the file you are editing — you do not need to open a different file first.
 
-(Optional) Once you are in the Classroom 50 class, you may also be able to find the assignment there — but the Teams/OneNote link is the usual way to accept.
+If anything looks confusing the first time you open the project, ask a teacher — IntelliJ asks a few one-time setup questions, and then day-to-day work is just writing code and using that green play button.
 
 ## The Project
 
@@ -80,26 +80,14 @@ Your job is to implement each of the functions according to the comment above th
 
 ## Unit Tests
 
-Along with **Main**, the green-play dropdown includes shared run configurations:
+Along with **Main**, the green-play dropdown includes ready-made options for running tests:
 
 - `ShapeMakerTest`, `BankAccountTest`, `ArrayListPracticeTest`
 - `AllTestsNoExtraCredit` (required tests only)
 - `ShapeMakerExtraCreditTest`, `ArrayListPracticeExtraCreditTest`
 - `AllTestsWithExtraCredit`
 
-These let you run unit tests without leaving the source file you are editing. We'll learn more about unit tests in the next unit, but for now: a passing test means you are on the right track. The provided tests are not comprehensive — they do not cover every possible input — so they do **not** guarantee your code is completely correct. Still, a major portion of the grade is based on these tests, so run them before you turn the project in. You only need the Extra Credit configurations if you plan to attempt the extra credit.
-
-From a terminal you can also run required tests with:
-
-```bash
-mvn test
-```
-
-All tests including extra credit:
-
-```bash
-mvn test -Pextracredit
-```
+These let you run tests without leaving the source file you are editing. We'll learn more about unit tests in the next unit, but for now: a passing test means you are on the right track. The provided tests are not comprehensive — they do not cover every possible input — so they do **not** guarantee your code is completely correct. Still, a major portion of the grade is based on these tests, so run them before you turn the project in. You only need the Extra Credit options if you plan to attempt the extra credit.
 
 ## Bonus Assignment
 
