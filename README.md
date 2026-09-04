@@ -28,14 +28,11 @@ We know that hard, and honest work doesn't come easily. If you feel like you are
 
 ## Getting started
 
-1. Go to the provided assignment link, and click accept. It should take you to your project page.
-   (If it doesn't, click on the link above again, and click on the link to the project page).
-2. On the GitHub project page, click on the green "Clone or Download" button and copy the link.
-3. Open Intellij, click on the "Checkout from Version Control" drop down and select "GitHub"
-4. On the next page paste the link you copied into the "Git Repository URL" box.
-5. Click Clone. You may have to enter your GitHub username and password.
-6. If it asks you whether you want to open the project or not, select yes.
-7. You should see your project open. If you need to reopen the project, you should see it under "File > Open Recent"
+1. Accept the assignment from Classroom 50 (web or `gh student accept`). That creates your private GitHub repository.
+2. Clone your repository and open the project folder in IntelliJ IDEA.
+3. When IntelliJ asks, trust/open it as a **Maven** project (it will read `pom.xml`).
+4. Use a JDK **17** (or newer) for the project SDK if prompted.
+5. Use the green play **dropdown** in the top-right toolbar to run `Main` or any of the shared test configurations (you do not need to open the test file first).
 
 ## The Project
 
@@ -81,7 +78,26 @@ Your job is to implement each of the functions according to the comment above th
 
 ## Unit Tests
 
-You'll notice that, along with 'Main', there are several other configs in the dropdown by the play button. These are 'ShapeMakerTest', 'BankAccountTest', 'ArrayListPracticeTest', 'AllTestsNoExtraCredit', 'ShapeMakerExtraCreditTest', 'ArrayListPracticeExtraCredit', and 'AllTestsWithExtraCredit'. These configs allow you to run Unit Tests. We'll learn more about Unit Tests in the next unit, but for now, know that unit tests are test cases that allow you to test specific functions and classes. There is a unit test for almost every function that you will be writing. Unit tests help you determine if you wrote the function correctly. If a unit test passes, that means you are on the right track. Because the unit tests we've given you are not comprehensive (they don't test every possible scenario), it DOES NOT guarantee that you're code is completely right. Make sure you test the functions yourself with different inputs. However, a major portion of the grade will be based on if your unit tests pass, so make sure to run them before you turn them in. You only need to run the The'ShapeMakerExtraCreditTest' unit tests if you plan on completing the extra credit.
+Along with **Main**, the green-play dropdown includes shared run configurations:
+
+- `ShapeMakerTest`, `BankAccountTest`, `ArrayListPracticeTest`
+- `AllTestsNoExtraCredit` (required tests only)
+- `ShapeMakerExtraCreditTest`, `ArrayListPracticeExtraCreditTest`
+- `AllTestsWithExtraCredit`
+
+These let you run unit tests without leaving the source file you are editing. We'll learn more about unit tests in the next unit, but for now: a passing test means you are on the right track. The provided tests are not comprehensive — they do not cover every possible input — so they do **not** guarantee your code is completely correct. Still, a major portion of the grade is based on these tests, so run them before you turn the project in. You only need the Extra Credit configurations if you plan to attempt the extra credit.
+
+From a terminal you can also run required tests with:
+
+```bash
+mvn test
+```
+
+All tests including extra credit:
+
+```bash
+mvn test -Pextracredit
+```
 
 ## Bonus Assignment
 
@@ -104,20 +120,20 @@ In terms of grades, you can achieve Exceeds Expectations by doing all of the Sha
 
 ## Committing your Changes and Turning In The Project
 
-The same instructions with screenshots are in the OneNote at the bottom of the page [here](https://holynamesseattle.sharepoint.com/sites/Section_6558/_layouts/OneNote.aspx?id=%2Fsites%2FSection_6558%2FSiteAssets%2FProjects%20in%20Comp%20Sci%20-%20Mon-Wed%2019-20%20Notebook&wd=target%28Class%20Overview.one%7C74AD5220-0070-4A9A-BD5E-85B1624E453C%2FGetting%20Started%20With%20A%20Project%7C127DA7EC-BEEC-4463-BE97-A79C378AD455%2F%29).
-
 At the end of every class period, you should commit your changes. "Committing your changes" is basically a fancy way of saving the changes you made. It is very important and useful for two reasons:
 
 1. You save your changes online, so you can never lose them. Even if your computer breaks, your changes will still be saved somewhere.
 2. You can go back to any previous version that you committed. So if you accidentally make a wrong change that breaks your program, you can always go back to a state where the program was working.
 
-You can commit and push ("push" means send it to GitHub.com to save it there) by doing the steps below:
+You can commit and push ("push" means send it to GitHub.com to save it there) from IntelliJ:
 
-1. Once you are ready to save your changes, click on VCS > Commit Changes… in the taskbar.
-2. It will show you a list of files that you have made changes to. (It might also show changes to a file called workspace.xml, which you didn’t touch. That's ok, IntelliJ modifies that file behind the scenes). You can double click on any file and see the changes you've made to the file.
-3. Hover over the commit button and select "Commit and Push". It will prompt you, asking if you are sure. Select "Commit", and then on the next page, select "Push".
-4. Go to your project page on GitHub, and make sure that your changes are there.
-5. That's it. The last change you submit before the deadline will be considered your turned in assignment. You can turn in additional submissions after the deadline, but remember that there is a 10% penalty added each week after the deadline you turn in the assignment.
+1. Click **Git > Commit…** (or use the Commit tool window).
+2. Review the changed files. You can double-click a file to see the diff.
+3. Enter a short commit message, then choose **Commit and Push…**.
+4. Confirm the push to your repository's `main` branch.
+5. On GitHub, confirm your latest commits are visible.
+
+Pushing to `main` is how you turn in work for this assignment. Autograding runs on those pushes. You can keep improving and pushing after the deadline if your teacher allows late work — ask about any late penalty.
 
 ## Grading
 
