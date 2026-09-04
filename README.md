@@ -28,11 +28,13 @@ We know that hard, and honest work doesn't come easily. If you feel like you are
 
 ## Getting started
 
-1. Accept the assignment from Classroom 50 (web or `gh student accept`). That creates your private GitHub repository.
+1. Open the assignment acceptance link your teacher shares in **Teams** or **OneNote**, and accept the assignment. That creates your private GitHub repository.
 2. Clone your repository and open the project folder in IntelliJ IDEA.
 3. When IntelliJ asks, trust/open it as a **Maven** project (it will read `pom.xml`).
 4. Use a JDK **17** (or newer) for the project SDK if prompted.
 5. Use the green play **dropdown** in the top-right toolbar to run `Main` or any of the shared test configurations (you do not need to open the test file first).
+
+(Optional) Once you are in the Classroom 50 class, you may also be able to find the assignment there — but the Teams/OneNote link is the usual way to accept.
 
 ## The Project
 
