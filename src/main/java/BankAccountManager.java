@@ -60,12 +60,12 @@ public class BankAccountManager {
     }
 
     /**
-     * Returns a string representation of a BankAccount object. The string looks like this:
-     * 
+     * Prints a BankAccount object. The printed output looks like this:
+     *
      *      Name: Serena Williams
      *      Account Balance: 1000000.00
-     * 
-     * @return String
+     *
+     * @param account the bank account to print
      */
     public static void PrintAccountInfo(BankAccount account)
     {

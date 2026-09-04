@@ -1,14 +1,9 @@
-import org.junit.Before;
 import org.junit.Test;
-import sun.reflect.generics.reflectiveObjects.NotImplementedException;
 
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Random;
 
-import org.junit.Assert.*;
-
-import static junit.framework.TestCase.*;
+import static org.junit.Assert.*;
 
 public class ArrayListPracticeTest {
 

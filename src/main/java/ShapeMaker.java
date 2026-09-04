@@ -14,7 +14,8 @@ public class ShapeMaker {
      */
     public static String PrintSquare(int size)
     {
-        return "";
+        // write your code above and remove the line below
+        throw new UnsupportedOperationException();
     }
 
     /**
@@ -31,8 +32,8 @@ public class ShapeMaker {
      */
     public static String PrintRectangle(int length, int height)
     {
-        // write your code here
-        return "";
+        // write your code above and remove the line below
+        throw new UnsupportedOperationException();
     }
 
     /**
@@ -49,8 +50,8 @@ public class ShapeMaker {
      */
     public static String PrintRightTriangle(int height)
     {
-        // write your code here
-        return "";
+        // write your code above and remove the line below
+        throw new UnsupportedOperationException();
     }
 
     /**
@@ -67,8 +68,8 @@ public class ShapeMaker {
      */
     public static String PrintInvertedRightTriangle(int height)
     {
-        // write your code here
-        return "";
+        // write your code above and remove the line below
+        throw new UnsupportedOperationException();
     }
 
     /**
@@ -83,11 +84,10 @@ public class ShapeMaker {
      * @param height the height of the triangle
      * @return a string that looks like the shape above when printed
      */
-
     public static String PrintBackwardsRightTriangle(int height)
     {
-        // write your code here
-        return "";
+        // write your code above and remove the line below
+        throw new UnsupportedOperationException();
     }
 
     /**
@@ -104,7 +104,7 @@ public class ShapeMaker {
      */
     public static String PrintEquilateralTriangle(int height)
     {
-        // write your code here
-        return "";
+        // write your code above and remove the line below
+        throw new UnsupportedOperationException();
     }
 }
