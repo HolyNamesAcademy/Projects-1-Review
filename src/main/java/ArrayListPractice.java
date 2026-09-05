@@ -202,6 +202,8 @@ public class ArrayListPractice {
 
     /**
      * Transfer money from one student to another.
+     * Hint: find both students by name; use Withdraw then Deposit on their BankAccounts;
+     * return false if either student is missing or withdraw fails.
      *
      * @param students A list of students.
      * @param fromStudentName The name of the student to transfer money from.
@@ -219,6 +221,8 @@ public class ArrayListPractice {
     /**
      * EXTRA CREDIT:
      * Increments everyone's grade level by one. If a student is in 12th grade, remove them from the array.
+     * Warning: do not remove elements while iterating forward — loop backwards, or collect
+     * students to remove and remove them after the loop.
      *
      * @param students The list of students to advance to the next grade.
      */
@@ -233,6 +237,8 @@ public class ArrayListPractice {
      * Sort the array list by increasing grade level (all the 9th graders, then 10th graders, etc)
      * If there is a tie (aka 2 people in the same grade), the person whose name is first in the
      * alphabet should appear first.
+     * Hint: a simple bubble sort or selection sort works well — primary key is grade ascending,
+     * then name alphabetical (use String compareTo).
      *
      * @param students The list of students to sort.
      */

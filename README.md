@@ -38,7 +38,7 @@ If anything looks confusing the first time you open the project, ask a teacher �
 
 ## The Project
 
-This project has three parts:
+This project has three parts — work through them in this order: **ShapeMaker → BankAccount → ArrayListPractice**.
 
 1. **ShapeMaker**: In ShapeMaker, you will implement functions that print out shapes using the '\*' symbol and whitespaces (spaces, tabs, and newlines). It will be a good exercise to warm up your for loops and if statements.
 2. **BankAccountManager**: The BankAccountManager is a bare bones application that allows the user to manage a single bank account by making withdrawals, deposits, and checking the balance. You will implement a BankAcocunt class that manages all of the functionality of a bank account. This part will be a good exercise to review constructors, member variables, and other things about classes.
@@ -51,6 +51,13 @@ In order to run ShapeMaker, click on the dropdown next to the play button in the
 All of the functionality that you will need to implement is located in the ShapeMaker class. Open this class, and you will see a list of functions that must be implemented, with instructions above each function. Follow the instructions exactly.
 
 Start by implementing the first function. Then hit play and see the program run, and see if you implemented it properly. If you get it right, move onto the next function. Otherwise, make whatever corrections you need to make and run it again. I recommend running the program very often. That will allow you to make sure you are on the right track. You should absolutely be running it after each function that you implement.
+
+Each function's Javadoc shows ASCII examples of the expected output. Use this **Spacing cookbook** when building each row:
+
+- Stars on a line are separated by single spaces.
+- Backwards right triangle: leading spaces before the first `*` on a row = `(height - numStarsOnThisRow) * 2`.
+- Equilateral triangle: leading spaces = `height - numStarsOnThisRow`.
+- Required tests allow trailing spaces (`trimRight`); extra credit = no trailing spaces — use `ShapeMakerExtraCreditTest`.
 
 **Extra Credit Opportunity:** write the functions so they don't have extra spaces at the end of the line if they are not needed. So the first line of PrintSquare() should be "\* \* \*" rather than "\* \* \* " (the second one has an extra space at the end). The extra "ShapeMakerExtraCreditTest" config is so that you can test your functions for the extra credit (More on unit tests below).
 
@@ -87,7 +94,9 @@ Along with **Main**, the green-play dropdown includes ready-made options for run
 - `ShapeMakerExtraCreditTest`, `ArrayListPracticeExtraCreditTest`
 - `AllTestsWithExtraCredit`
 
-These let you run tests without leaving the source file you are editing. We'll learn more about unit tests in the next unit, but for now: a passing test means you are on the right track. The provided tests are not comprehensive — they do not cover every possible input — so they do **not** guarantee your code is completely correct. Still, a major portion of the grade is based on these tests, so run them before you turn the project in. You only need the Extra Credit options if you plan to attempt the extra credit.
+These let you run tests without leaving the source file you are editing. **Recommended order:** after you implement `PrintSquare`, run `ShapeMakerTest` first; then continue ShapeMaker → `BankAccountTest` → `ArrayListPracticeTest`. Use `AllTestsNoExtraCredit` once all required parts pass.
+
+We'll learn more about unit tests in the next unit, but for now: a passing test means you are on the right track. The provided tests are not comprehensive — they do not cover every possible input — so they do **not** guarantee your code is completely correct. Still, a major portion of the grade is based on these tests, so run them before you turn the project in. You only need the Extra Credit options if you plan to attempt the extra credit.
 
 ## Bonus Assignment
 
