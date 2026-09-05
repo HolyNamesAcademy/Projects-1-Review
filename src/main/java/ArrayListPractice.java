@@ -60,10 +60,12 @@ public class ArrayListPractice {
      * @return A string representing the list.
      */
     public static String ConvertToString(ArrayList<Integer> numbers) {
-String numberList = "";
-        for(int i = 0; i <numbers.size() - 1; i++)
-            numberList+=numbers.get(i) + " ";
-        numberList+=numbers.get(numbers.size()-1); return numberList;
+        String numberList = "";
+        for (int i = 0; i < numbers.size() - 1; i++) {
+            numberList += numbers.get(i) + " ";
+        }
+        numberList += numbers.get(numbers.size() - 1);
+        return numberList;
     }
 
     /**
