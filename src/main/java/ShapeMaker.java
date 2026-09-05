@@ -19,15 +19,15 @@ public class ShapeMaker {
     }
 
     /**
-     * Returns a string that looks like a rectangle with sides of size "length" and "width. If length = 5, width = 4 the rectangle looks like this:
+     * Returns a string that looks like a rectangle. If length = 5 and height = 4 the rectangle looks like this:
      * 
      *     * * * * *
      *     * * * * *
      *     * * * * *
      *     * * * * *
      *
-     * @param length the width of the rectangle
-     * @param height the height of the rectangle
+     * @param length number of stars in each row (how wide the rectangle is)
+     * @param height number of rows (how tall the rectangle is)
      * @return a string that looks like the shape above when printed
      */
     public static String PrintRectangle(int length, int height)

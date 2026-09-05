@@ -32,7 +32,7 @@ We know that hard, and honest work doesn't come easily. If you feel like you are
 2. On your new project page, click the green **Code** button, copy the link, and clone the project into IntelliJ (File → New → Project from Version Control, then paste the link).
 3. When IntelliJ asks if you trust the project, say yes / trust it so it can finish setting things up.
 4. If IntelliJ asks you to pick a Java version (JDK), choose **17** or newer.
-5. Use the green play **dropdown** near the top-right of IntelliJ to run the program (`Main`) or the tests. You can stay in the file you are editing — you do not need to open a different file first.
+5. Use the green play **dropdown** near the top-right of IntelliJ to run the program (`Main`) or the tests. Start with `AllTestsNoExtraCredit` while you work on the required parts. When you try the extra-credit methods, use `AllTestsWithExtraCredit` (or the individual ExtraCredit run configs). You can stay in the file you are editing — you do not need to open a different file first.
 
 If anything looks confusing the first time you open the project, ask a teacher — IntelliJ asks a few one-time setup questions, and then day-to-day work is just writing code and using that green play button.
 
