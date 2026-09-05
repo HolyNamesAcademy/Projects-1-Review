@@ -52,12 +52,7 @@ All of the functionality that you will need to implement is located in the Shape
 
 Start by implementing the first function. Then hit play and see the program run, and see if you implemented it properly. If you get it right, move onto the next function. Otherwise, make whatever corrections you need to make and run it again. I recommend running the program very often. That will allow you to make sure you are on the right track. You should absolutely be running it after each function that you implement.
 
-Each function's Javadoc shows ASCII examples of the expected output. Use this **Spacing cookbook** when building each row:
-
-- Stars on a line are separated by single spaces.
-- Backwards right triangle: leading spaces before the first `*` on a row = `(height - numStarsOnThisRow) * 2`.
-- Equilateral triangle: leading spaces = `height - numStarsOnThisRow`.
-- Required tests allow trailing spaces (`trimRight`); extra credit = no trailing spaces — use `ShapeMakerExtraCreditTest`.
+Each function's Javadoc shows ASCII examples of the expected output. Count spaces carefully against those pictures — required tests ignore trailing spaces after the last `*`, but leading spaces and spaces between stars must match. Extra credit (no trailing spaces) uses `ShapeMakerExtraCreditTest`.
 
 **Extra Credit Opportunity:** write the functions so they don't have extra spaces at the end of the line if they are not needed. So the first line of PrintSquare() should be "\* \* \*" rather than "\* \* \* " (the second one has an extra space at the end). The extra "ShapeMakerExtraCreditTest" config is so that you can test your functions for the extra credit (More on unit tests below).
 
